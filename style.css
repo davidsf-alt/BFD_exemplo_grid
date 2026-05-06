@@ -31,10 +31,6 @@
   --tam-small: 0.875rem; /* 14px */
 }
 
-html {
-  font-size: 100%; /* Mantém 16px base */
-}
-
 body {
   font-family: var(--fonte-principal);
   font-size: var(--tam-base);
@@ -44,3 +40,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+background-color: var(--cor-primaria);
+padding: var(--espaco-xs);
+}
+
+nav a {
+  color: white;
+  text-decoration: nome;
+  padding: var(--espaco-sm);
+}
+
+.layout-wrapper{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:var(--espaco-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--espaco-md);
+}
+
